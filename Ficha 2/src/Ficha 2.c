@@ -61,7 +61,7 @@ int main(void) {
 
     float distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1,2));
 
-    printf("%f", exp);
+    printf("distance: %.3f", distance);
 
 
 
