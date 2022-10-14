@@ -50,9 +50,16 @@ int main(void) {
 
     // Exercício 5:
 
-    float ff = sqrt(4);
+    int x1 = 1;
+    int y1 = 2;
 
-    float exp = pow(2,3);
+    int x2 = 3;
+    int y2 = 3;
+
+    pow(x2 - x1, 2);
+    pow(y2 - y1, 2);
+
+    float distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1,2));
 
     printf("%f", exp);
 
