@@ -35,18 +35,59 @@ void mensagemIMC(float imc){
 		puts("Obeso");
 	}
 }
+void drawLine(int widht){
+	for(int i = 0; i < widht; i++) {
+		printf("%c", '*');
+	}
+
+}
+
+void drawRectangle(int height, int width){
+	for(int i = 0; i < height; i++) {
+		drawLine(width);
+		puts("");
+	}
+}
+
+void drawTriangle(int height){
+	int width = 1;
+	for(int i = 0; i < height; i++) {
+			drawLine(width);
+			puts("");
+			width ++;
+		}
+}
 
 int main(void) {
+	//==================================================================Exercicio1============================================================
 /*
 	float radius = 2;
 	float height = 4;
 	float volumeC = calculateCilinderVolume(2, 4);
 	printf("O cilindro de raio %f e a altura %f tem o volume %f,", radius, height, volumeC);
 */
-    float imc = calcularIMC(1.7, 60);
+	//=================================================================Exercicio2============================================================
+
+/*    float imc = calcularIMC(1.7, 60);
 	printf("IMC é: %f\n", imc);
 
 	mensagemIMC(imc);
+	*/
+	//================================================================Exercico3================================================================
+
+	drawRectangle(3, 3);
+    //================================================================Exercicio4===============================================================
+
+	drawTriangle(10);
+	//================================================================Exercicio5=============================================================
+
+	for(int i = 0)
+
+
+
+
+
+
 
 
 
