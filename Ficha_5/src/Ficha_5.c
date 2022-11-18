@@ -11,11 +11,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "Ficha5.h"
+
+
 int main(void) {
 
-	atm(1000);
+	//atm(1000);
 
-     validatePIN();
+     //validatePIN();
+
+     CalcularTempoTrabalho(9, 0, 0, 10, 0, 0);
+
+
 
 	return EXIT_SUCCESS;
 }
