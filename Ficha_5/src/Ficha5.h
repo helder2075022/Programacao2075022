@@ -9,15 +9,15 @@
 #define FICHA5_H_
 
 
-void atm(float amount){
+void atm(float amount);
 	
-}
 
 
-void ValidatePIN(){
+
+void ValidatePIN();
 	
-}
 
+void CalcularTempoTrabalho(int he, int me, int se, int hs, int ms, int ss);
 
 
 #endif /* FICHA5_H_ */

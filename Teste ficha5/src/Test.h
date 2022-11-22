@@ -12,4 +12,9 @@
 float multi(float x, float y);
 float sum(float x, float y);
 float fraction(float x, float y);	
+
+void CalcularTempoTrabalho(int he, int me, int se, int hs, int ms, int ss);
+void adivinha();
+
+
 #endif /* TEST_H_ */
