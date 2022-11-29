@@ -49,6 +49,15 @@ int main(void) {
 	int minindex = min(array,  size);
 		printf(" O índice de valor mínimo é: %i \n", index);
 
+	float avg = average( array,  size);
+          printf("A média é: %f\n", avg);
+
+    float var = variance(array, size);
+          printf("A variancia é: %f\n", var);
+
+   float std = standardDesviation(array, size);
+          printf("O desvio padrão é: %f\n", std);
+
 
 
 
