@@ -1,0 +1,5 @@
+Helder : 13 
+Artur : 13 
+Rodolfo : 18 
+Diogo : 15 
+Media : 14.750000 
