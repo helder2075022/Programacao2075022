@@ -60,43 +60,61 @@ void avaliacaoProjeto1() {
 	int grades[4] = { 13, 13, 18, 15 };
 	float avg = 0;
 
-
 	int size = sizeof(grades) / sizeof(int);
 	for (int i = 0; i < size; i++) {
 		fprintf(fp, "%s : %i \n", names[i], grades[i]);
-		avg+=grades[i];
+		avg += grades[i];
 	}
 
-    avg = avg / size;
-   fprintf(fp, "Media : %f \n", avg);
+	avg = avg / size;
+	fprintf(fp, "Media : %f \n", avg);
 	fclose(fp);
 }
 
-void readGrades(){
+void readGrades() {
 	FILE *fp;
-	 fp = fopen("grades.txt", "r");
-	 char buff[256];
-	 char *token = ":";
-	 char *split;
+	fp = fopen("grades.txt", "r");
+	char buff[256];
+	char *token = ":";
+	char *split;
 
-	 while (fgets(buff, 256, fp) != NULL) {
-		 split = strtok(buff, token);
-	  while(split != NULL){
-		  puts(split);
-		  split = strtok(NULL, token);
-	 }
+	while (fgets(buff, 256, fp) != NULL) {
+		split = strtok(buff, token);
+		while (split != NULL) {
+			puts(split);
+			split = strtok(NULL, token);
+		}
 
-	 fclose(fp);
+		fclose(fp);
 
-	 }
-
+	}
 
 }
+
+void randomWords() {
+
+	char words[10][20] ={"Lorem", "Ipsum", "é", "um", "modelo", "da", "indústria", "tipográfica", "e", "impressão" };
+
+	FILE *fp;
+	fp = fopen("grades.txt", "w");
+
+
+	int t = 0;
+	srand((unsigned) time(&t));
+
+	for (int i = 0; i < 10; i++) {
+		int random = rand() % 10;
+		fprintf(fp, "%s \n", words[random]);
+	}
+	fclose(fp);
+}
+
 int main(void) {
 	//readFileByChar();
 	//readByLine();
 	//ReadLine();
-	avaliacaoProjeto1();
+	//avaliacaoProjeto1();
+	randomWords();
 
 	return EXIT_SUCCESS;
 }
